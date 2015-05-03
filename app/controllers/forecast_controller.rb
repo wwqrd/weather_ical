@@ -3,7 +3,7 @@ class ForecastController < ApplicationController
 
   def show
     respond_to do |format|
-      format.html
+      format.json { render :json => @forecast }
       format.ics
     end
   end

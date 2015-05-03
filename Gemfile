@@ -42,5 +42,5 @@ group :development, :test do
 
   gem 'vcr'
   gem 'webmock'
+  gem 'vcr_cable'
 end
-
