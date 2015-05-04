@@ -1,5 +1,4 @@
-require 'icalendar'
-
+require 'ri_cal'
 
 class ForecastCalendar
 
@@ -10,19 +9,18 @@ class ForecastCalendar
 
   def to_ics
     # This needs some thought
-    cal = Icalendar::Calendar.new
-
-    @forecast_series.each do |forecast|
-      cal.event do |e|
-        e.dtstart     = forecast.time_from
-        e.dtend       = forecast.time_to
-        e.summary     = @condition
-        e.description = ''
-        # e.ip_class    = 'PRIVATE'
+    calendar = RiCal.Calendar do |cal|
+      @forecast_series.each do |forecast|
+        cal.event do |event|
+          event.summary = @condition
+          event.description = @condition
+          event.dtstart =  forecast.time_from
+          event.dtend = forecast.time_to
+        end
       end
     end
 
-    cal.to_ical
+    calendar.to_s
   end
 
   def self.Rain(forecast_series)

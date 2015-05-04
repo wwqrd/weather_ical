@@ -18,7 +18,7 @@ gem 'httparty'
 
 gem 'validates_timeliness'
 
-gem 'icalendar', '~> 2.0'
+gem 'ri_cal'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

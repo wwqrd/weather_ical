@@ -12,8 +12,8 @@ describe ForecastCalendar, :vcr => true do
 
     it 'returns the forecast in .ics format' do
       ics_lines = ics.split("\n")
-      expect(ics_lines.first).to eq("BEGIN:VCALENDAR\r")
-      expect(ics_lines.last).to eq("END:VCALENDAR\r")
+      expect(ics_lines.first).to eq("BEGIN:VCALENDAR")
+      expect(ics_lines.last).to eq("END:VCALENDAR")
     end
 
   end
