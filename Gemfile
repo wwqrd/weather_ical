@@ -31,6 +31,8 @@ gem 'icalendar', '~> 2.0'
 
 gem 'dotenv-rails'
 
+gem 'puma'
+
 group :development do
 
   gem 'vcr_cable'
