@@ -18,6 +18,8 @@ gem 'httparty'
 
 gem 'validates_timeliness'
 
+gem 'icalendar', '~> 2.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -26,6 +28,14 @@ gem 'validates_timeliness'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+gem 'dotenv-rails'
+
+group :development do
+
+  gem 'vcr_cable'
+
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -42,5 +52,4 @@ group :development, :test do
 
   gem 'vcr'
   gem 'webmock'
-  gem 'vcr_cable'
 end

@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe Forecast, :type => :model do
+describe Forecast, :type => :model do
 
   it "has a valid factory" do
     expect(FactoryGirl.build(:forecast)).to be_valid
