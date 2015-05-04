@@ -10,6 +10,7 @@ class ForecastCalendar
   def to_ics
     # This needs some thought
     calendar = RiCal.Calendar do |cal|
+      cal.add_x_property 'x_wr_calname', "#{@condition}"
       @forecast_series.each do |forecast|
         cal.event do |event|
           event.summary = @condition
