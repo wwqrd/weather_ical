@@ -40,13 +40,10 @@ class ForecastCalendar
     calendar.to_s
   end
 
+  def self.Generate(forecast_series, description, &filter)
+    precipitation_series = forecast_series.select(&filter)
 
-  def self.Rain(forecast_series)
-    precipitation_series = forecast_series.select do |forecast|
-      forecast.precipitation > 0.0
-    end
-
-    ForecastCalendar.new(precipitation_series, 'Rain')
+    ForecastCalendar.new(precipitation_series, description)
   end
 
 end
