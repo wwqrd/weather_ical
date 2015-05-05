@@ -7,14 +7,30 @@ class ForecastCalendar
     @forecast_series = forecast_series
   end
 
+  def combined_series
+    (first, *rest) = @forecast_series
+    [first].tap do |combined_series|
+      rest.each do |forecast|
+        if forecast.time_from == combined_series.last.time_to
+          # We are trashing the data here, e.g. each forecast will
+          # probably contain different values for precipitation; this
+          # implementation only cares about the first in each run.
+          combined_series.last.time_to = forecast.time_to
+        else
+          combined_series << forecast
+        end
+      end
+    end
+  end
+
   def to_ics
     # This needs some thought
     calendar = RiCal.Calendar do |cal|
       cal.add_x_property 'x_wr_calname', "#{@condition}"
-      @forecast_series.each do |forecast|
+      combined_series.each do |forecast|
         cal.event do |event|
           event.summary = @condition
-          event.description = @condition
+          event.description = @condition  # Maybe this could hold detailed data
           event.dtstart =  forecast.time_from
           event.dtend = forecast.time_to
         end
@@ -24,19 +40,13 @@ class ForecastCalendar
     calendar.to_s
   end
 
-  def self.Rain(forecast_series)
-    forecast_series.select! { |forecast| forecast.precipitation > 0.0 }
 
-    rain_series = []
-    forecast_series.each do |forecast|
-      if rain_series.size > 0 && forecast.time_from == rain_series.last.time_to
-        rain_series.last.time_to = forecast.time_to
-      else
-        rain_series << forecast
-      end
+  def self.Rain(forecast_series)
+    precipitation_series = forecast_series.select do |forecast|
+      forecast.precipitation > 0.0
     end
 
-    ForecastCalendar.new(rain_series, 'Rain')
+    ForecastCalendar.new(precipitation_series, 'Rain')
   end
 
 end
