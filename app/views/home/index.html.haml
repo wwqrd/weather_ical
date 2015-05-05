@@ -1,4 +1,24 @@
+.row
+  .col.s12
+    %h1 Schedule appointments for the weather.
+    %h5 Get a digital calendar for the rain.
 
-%h1 Schedule appointments for the weather.
+%form#forecast
+  .row
+    .input-field.col.s12
+      %i.mdi-maps-local-library.prefix
+      %input#forecast_location{type: 'text', placeholder: 'Enter your forecast location here'}
+      %label{for: 'location'} Location
+  .row
+    .input-field.col.s12
+      %button.waves-effect.waves-light.btn.purple.darken-2{type: 'submit'} Get my calendar
 
-%p URLS like: http://weather-ical.herokuapp.com/forecast/[UK city here].ics
+.row
+  .col.s12
+    #calendar.card.purple.darken-2
+      .card-content.white-text
+        .card-title Your calendar URL
+        %p Copy and paste into your calendar application:
+        .input-field
+          %i.mdi-action-event.prefix
+          %input#calendar_url{type: 'text', onclick: "this.select();"}

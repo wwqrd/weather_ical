@@ -20,6 +20,9 @@ gem 'validates_timeliness'
 
 gem 'ri_cal'
 
+gem 'jquery-rails'
+
+gem 'materialize-sass'
 
 gem 'rails_12factor', group: :production
 
