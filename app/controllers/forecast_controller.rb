@@ -5,6 +5,7 @@ class ForecastController < ApplicationController
     rain_calendar = ForecastCalendar.Rain(@forecast_series)
 
     respond_to do |format|
+      format.json { render :json => rain_calendar.combined_series }
       format.ics { render :text => rain_calendar.to_ics, content_type: 'text/calendar; charset=utf-8' }
     end
   end
