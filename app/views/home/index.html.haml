@@ -13,12 +13,19 @@
     .input-field.col.s12
       %button.waves-effect.waves-light.btn.purple.darken-2{type: 'submit'} Get my calendar
 
-.row
-  .col.s12
-    #calendar.card.purple.darken-2
-      .card-content.white-text
-        .card-title Your calendar URL
-        %p Copy and paste into your calendar application:
-        .input-field
-          %i.mdi-action-event.prefix
-          %input#calendar_url{type: 'text', onclick: "this.select();"}
+#calendar
+  .row
+    .col.s12
+      .card.purple.darken-2
+        .card-content.white-text
+          .card-title Your calendar URL
+          %p Copy and paste into your calendar application:
+          .input-field
+            %i.mdi-action-event.prefix
+            %input#calendar_url{type: 'text', onclick: "this.select();"}
+
+#forecast_for_today
+  .row
+    .col.s12
+      %h3 Forecast for today
+      #forecast_preview

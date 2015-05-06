@@ -22,6 +22,8 @@ gem 'ri_cal'
 
 gem 'jquery-rails'
 
+gem 'momentjs-rails'
+
 gem 'materialize-sass'
 
 gem 'rails_12factor', group: :production
