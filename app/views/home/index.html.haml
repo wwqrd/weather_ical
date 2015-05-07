@@ -5,10 +5,12 @@
 
 %form#forecast
   .row
-    .input-field.col.s12
-      %i.mdi-maps-place.prefix
-      %input#forecast_location{type: 'text', placeholder: 'Enter your forecast location here'}
-      %label{for: 'location'} Location
+    .col.s6
+      %label Location
+      %select#forecast_location.browser-default{style: 'width: auto;'}
+        %option{value: "", disabled: true, selected: true} Choose your option
+        - TOWNS.each do |town|
+          %option= town
   .row
     .input-field.col.s12
       %button.waves-effect.waves-light.btn.purple.darken-2{type: 'submit'} Get my calendar
