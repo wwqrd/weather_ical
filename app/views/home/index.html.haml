@@ -8,7 +8,7 @@
     .col.s6
       %label Location
       %select#forecast_location.browser-default{style: 'width: auto;'}
-        %option{value: "", disabled: true, selected: true} Choose your option
+        %option{value: "", disabled: true, selected: true} Choose your location
         - TOWNS.each do |town|
           %option= town
   .row
