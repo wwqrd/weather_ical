@@ -16,7 +16,7 @@ class WeatherService
         time_from: DateTime.parse(time['from']),
         time_to: DateTime.parse(time['to']),
         summary: time['symbol']['name'],
-        precipitation: time['precipitation']['minvalue'].to_f,
+        precipitation: time['precipitation']['value'].to_f,
         wind_direction: time['windDirection']['code'].to_sym,
         wind_speed: time['windSpeed']['mps'].to_f,
         temperature: time['temperature']['value'].to_f,
