@@ -37,11 +37,11 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Cache-Control:
-      - public, max-age=400
+      - public, max-age=402
       Expires:
-      - Sat, 09 May 2015 09:49:49 GMT
+      - Sat, 09 May 2015 09:49:52 GMT
       Date:
-      - Sat, 09 May 2015 09:43:09 GMT
+      - Sat, 09 May 2015 09:43:10 GMT
       Content-Length:
       - '27228'
       Connection:
@@ -408,5 +408,5 @@ http_interactions:
         unit=\"celsius\" value=\"17\" />\r\n        <pressure unit=\"hPa\" value=\"1018.6\"
         />\r\n      </time>\r\n    </tabular>\r\n  </forecast>\r\n</weatherdata>"
     http_version: 
-  recorded_at: Sat, 09 May 2015 09:43:09 GMT
+  recorded_at: Sat, 09 May 2015 09:43:10 GMT
 recorded_with: VCR 2.9.3
