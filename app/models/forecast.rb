@@ -1,5 +1,7 @@
 class Forecast
+
   include ActiveModel::Model
+
   WIND_DIRECTIONS = [:N, :NNE, :NE, :NEE, :E, :SEE, :SE, :SSE, :S,
                      :SSW, :SW, :SSW, :W, :NWW, :NW, :NNW]
 
