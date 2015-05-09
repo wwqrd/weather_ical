@@ -1,0 +1,411 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.yr.no/place/United_Kingdom/England/London/forecast_hour_by_hour.xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/xml; charset=utf-8
+      Last-Modified:
+      - Sat, 09 May 2015 10:29:57 GMT
+      Server:
+      - Microsoft-IIS/8.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Frontendserver:
+      - MADMZYRWWW06
+      X-Powered-By:
+      - ASP.NET
+      X-Varnish:
+      - '1706921448'
+      X-Cacheserver:
+      - vmadmzlxyrvarnish03
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=110
+      Expires:
+      - Sat, 09 May 2015 10:39:41 GMT
+      Date:
+      - Sat, 09 May 2015 10:37:51 GMT
+      Content-Length:
+      - '27193'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<weatherdata>\r\n  <location>\r\n
+        \   <name>London</name>\r\n    <type>Capital</type>\r\n    <country>United
+        Kingdom</country>\r\n    <timezone id=\"Europe/London\" utcoffsetMinutes=\"60\"
+        />\r\n    <location altitude=\"25\" latitude=\"51.50853\" longitude=\"-0.12574\"
+        geobase=\"geonames\" geobaseid=\"2643743\" />\r\n  </location>\r\n  <credit>\r\n
+        \   <!--In order to use the free weather data from yr no, you HAVE to display
+        \r\nthe following text clearly visible on your web page. The text should be
+        a \r\nlink to the specified URL.-->\r\n    <!--Please read more about our
+        conditions and guidelines at http://om.yr.no/verdata/  English explanation
+        at http://om.yr.no/verdata/free-weather-data/-->\r\n    <link text=\"Weather
+        forecast from yr.no, delivered by the Norwegian Meteorological Institute and
+        the NRK\" url=\"http://www.yr.no/place/United_Kingdom/England/London/\" />\r\n
+        \ </credit>\r\n  <links>\r\n    <link id=\"xmlSource\" url=\"http://www.yr.no/place/United_Kingdom/England/London/forecast.xml\"
+        />\r\n    <link id=\"xmlSourceHourByHour\" url=\"http://www.yr.no/place/United_Kingdom/England/London/forecast_hour_by_hour.xml\"
+        />\r\n    <link id=\"overview\" url=\"http://www.yr.no/place/United_Kingdom/England/London/\"
+        />\r\n    <link id=\"hourByHour\" url=\"http://www.yr.no/place/United_Kingdom/England/London/hour_by_hour\"
+        />\r\n    <link id=\"longTermForecast\" url=\"http://www.yr.no/place/United_Kingdom/England/London/long\"
+        />\r\n  </links>\r\n  <meta>\r\n    <lastupdate>2015-05-09T04:36:00</lastupdate>\r\n
+        \   <nextupdate>2015-05-09T17:00:00</nextupdate>\r\n  </meta>\r\n  <sun rise=\"2015-05-09T05:18:55\"
+        set=\"2015-05-09T20:36:00\" />\r\n  <forecast>\r\n    <tabular>\r\n      <time
+        from=\"2015-05-09T12:00:00\" to=\"2015-05-09T13:00:00\">\r\n        <!-- Valid
+        from 2015-05-09T12:00:00 to 2015-05-09T13:00:00 -->\r\n        <symbol number=\"5\"
+        numberEx=\"40\" name=\"Light rain showers\" var=\"40d\" />\r\n        <precipitation
+        value=\"0.2\" minvalue=\"0.1\" maxvalue=\"0.4\" />\r\n        <!-- Valid at
+        2015-05-09T12:00:00 -->\r\n        <windDirection deg=\"244.6\" code=\"WSW\"
+        name=\"West-southwest\" />\r\n        <windSpeed mps=\"10.6\" name=\"Fresh
+        breeze\" />\r\n        <temperature unit=\"celsius\" value=\"16\" />\r\n        <pressure
+        unit=\"hPa\" value=\"1014.8\" />\r\n      </time>\r\n      <time from=\"2015-05-09T13:00:00\"
+        to=\"2015-05-09T14:00:00\">\r\n        <!-- Valid from 2015-05-09T13:00:00
+        to 2015-05-09T14:00:00 -->\r\n        <symbol number=\"4\" numberEx=\"4\"
+        name=\"Cloudy\" var=\"04\" />\r\n        <precipitation value=\"0\" minvalue=\"0\"
+        maxvalue=\"0.1\" />\r\n        <!-- Valid at 2015-05-09T13:00:00 -->\r\n        <windDirection
+        deg=\"258.5\" code=\"WSW\" name=\"West-southwest\" />\r\n        <windSpeed
+        mps=\"9.8\" name=\"Fresh breeze\" />\r\n        <temperature unit=\"celsius\"
+        value=\"16\" />\r\n        <pressure unit=\"hPa\" value=\"1015.4\" />\r\n
+        \     </time>\r\n      <time from=\"2015-05-09T14:00:00\" to=\"2015-05-09T15:00:00\">\r\n
+        \       <!-- Valid from 2015-05-09T14:00:00 to 2015-05-09T15:00:00 -->\r\n
+        \       <symbol number=\"2\" numberEx=\"2\" name=\"Fair\" var=\"02d\" />\r\n
+        \       <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-09T14:00:00
+        -->\r\n        <windDirection deg=\"261.4\" code=\"W\" name=\"West\" />\r\n
+        \       <windSpeed mps=\"9.2\" name=\"Fresh breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"16\" />\r\n        <pressure unit=\"hPa\" value=\"1015.8\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-09T15:00:00\" to=\"2015-05-09T16:00:00\">\r\n
+        \       <!-- Valid from 2015-05-09T15:00:00 to 2015-05-09T16:00:00 -->\r\n
+        \       <symbol number=\"2\" numberEx=\"2\" name=\"Fair\" var=\"02d\" />\r\n
+        \       <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-09T15:00:00
+        -->\r\n        <windDirection deg=\"262.9\" code=\"W\" name=\"West\" />\r\n
+        \       <windSpeed mps=\"9.6\" name=\"Fresh breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"17\" />\r\n        <pressure unit=\"hPa\" value=\"1016.0\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-09T16:00:00\" to=\"2015-05-09T17:00:00\">\r\n
+        \       <!-- Valid from 2015-05-09T16:00:00 to 2015-05-09T17:00:00 -->\r\n
+        \       <symbol number=\"1\" numberEx=\"1\" name=\"Clear sky\" var=\"01d\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-09T16:00:00
+        -->\r\n        <windDirection deg=\"268.8\" code=\"W\" name=\"West\" />\r\n
+        \       <windSpeed mps=\"10.2\" name=\"Fresh breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"17\" />\r\n        <pressure unit=\"hPa\" value=\"1016.8\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-09T17:00:00\" to=\"2015-05-09T18:00:00\">\r\n
+        \       <!-- Valid from 2015-05-09T17:00:00 to 2015-05-09T18:00:00 -->\r\n
+        \       <symbol number=\"3\" numberEx=\"3\" name=\"Partly cloudy\" var=\"03d\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-09T17:00:00
+        -->\r\n        <windDirection deg=\"268.9\" code=\"W\" name=\"West\" />\r\n
+        \       <windSpeed mps=\"9.0\" name=\"Fresh breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"17\" />\r\n        <pressure unit=\"hPa\" value=\"1017.5\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-09T18:00:00\" to=\"2015-05-09T19:00:00\">\r\n
+        \       <!-- Valid from 2015-05-09T18:00:00 to 2015-05-09T19:00:00 -->\r\n
+        \       <symbol number=\"3\" numberEx=\"3\" name=\"Partly cloudy\" var=\"03d\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-09T18:00:00
+        -->\r\n        <windDirection deg=\"286.9\" code=\"WNW\" name=\"West-northwest\"
+        />\r\n        <windSpeed mps=\"8.1\" name=\"Fresh breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"17\" />\r\n        <pressure unit=\"hPa\" value=\"1018.1\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-09T19:00:00\" to=\"2015-05-09T20:00:00\">\r\n
+        \       <!-- Valid from 2015-05-09T19:00:00 to 2015-05-09T20:00:00 -->\r\n
+        \       <symbol number=\"1\" numberEx=\"1\" name=\"Clear sky\" var=\"01d\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-09T19:00:00
+        -->\r\n        <windDirection deg=\"284.8\" code=\"WNW\" name=\"West-northwest\"
+        />\r\n        <windSpeed mps=\"6.8\" name=\"Moderate breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"16\" />\r\n        <pressure unit=\"hPa\" value=\"1019.0\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-09T20:00:00\" to=\"2015-05-09T21:00:00\">\r\n
+        \       <!-- Valid from 2015-05-09T20:00:00 to 2015-05-09T21:00:00 -->\r\n
+        \       <symbol number=\"1\" numberEx=\"1\" name=\"Clear sky\" var=\"01d\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-09T20:00:00
+        -->\r\n        <windDirection deg=\"288.3\" code=\"WNW\" name=\"West-northwest\"
+        />\r\n        <windSpeed mps=\"5.8\" name=\"Moderate breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"15\" />\r\n        <pressure unit=\"hPa\" value=\"1020.2\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-09T21:00:00\" to=\"2015-05-09T22:00:00\">\r\n
+        \       <!-- Valid from 2015-05-09T21:00:00 to 2015-05-09T22:00:00 -->\r\n
+        \       <symbol number=\"3\" numberEx=\"3\" name=\"Partly cloudy\" var=\"mf/03n.69\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-09T21:00:00
+        -->\r\n        <windDirection deg=\"287.2\" code=\"WNW\" name=\"West-northwest\"
+        />\r\n        <windSpeed mps=\"3.9\" name=\"Gentle breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"14\" />\r\n        <pressure unit=\"hPa\" value=\"1021.2\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-09T22:00:00\" to=\"2015-05-09T23:00:00\">\r\n
+        \       <!-- Valid from 2015-05-09T22:00:00 to 2015-05-09T23:00:00 -->\r\n
+        \       <symbol number=\"3\" numberEx=\"3\" name=\"Partly cloudy\" var=\"mf/03n.69\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-09T22:00:00
+        -->\r\n        <windDirection deg=\"277.1\" code=\"W\" name=\"West\" />\r\n
+        \       <windSpeed mps=\"2.3\" name=\"Light breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"13\" />\r\n        <pressure unit=\"hPa\" value=\"1021.8\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-09T23:00:00\" to=\"2015-05-10T00:00:00\">\r\n
+        \       <!-- Valid from 2015-05-09T23:00:00 to 2015-05-10T00:00:00 -->\r\n
+        \       <symbol number=\"2\" numberEx=\"2\" name=\"Fair\" var=\"mf/02n.69\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-09T23:00:00
+        -->\r\n        <windDirection deg=\"253.5\" code=\"WSW\" name=\"West-southwest\"
+        />\r\n        <windSpeed mps=\"2.1\" name=\"Light breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"12\" />\r\n        <pressure unit=\"hPa\" value=\"1022.4\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-10T00:00:00\" to=\"2015-05-10T01:00:00\">\r\n
+        \       <!-- Valid from 2015-05-10T00:00:00 to 2015-05-10T01:00:00 -->\r\n
+        \       <symbol number=\"1\" numberEx=\"1\" name=\"Clear sky\" var=\"mf/01n.72\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-10T00:00:00
+        -->\r\n        <windDirection deg=\"242.4\" code=\"WSW\" name=\"West-southwest\"
+        />\r\n        <windSpeed mps=\"2.1\" name=\"Light breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"12\" />\r\n        <pressure unit=\"hPa\" value=\"1022.9\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-10T01:00:00\" to=\"2015-05-10T02:00:00\">\r\n
+        \       <!-- Valid from 2015-05-10T01:00:00 to 2015-05-10T02:00:00 -->\r\n
+        \       <symbol number=\"1\" numberEx=\"1\" name=\"Clear sky\" var=\"mf/01n.72\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-10T01:00:00
+        -->\r\n        <windDirection deg=\"233.3\" code=\"SW\" name=\"Southwest\"
+        />\r\n        <windSpeed mps=\"2.3\" name=\"Light breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"11\" />\r\n        <pressure unit=\"hPa\" value=\"1023.4\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-10T02:00:00\" to=\"2015-05-10T03:00:00\">\r\n
+        \       <!-- Valid from 2015-05-10T02:00:00 to 2015-05-10T03:00:00 -->\r\n
+        \       <symbol number=\"1\" numberEx=\"1\" name=\"Clear sky\" var=\"mf/01n.72\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-10T02:00:00
+        -->\r\n        <windDirection deg=\"236.4\" code=\"WSW\" name=\"West-southwest\"
+        />\r\n        <windSpeed mps=\"2.4\" name=\"Light breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"10\" />\r\n        <pressure unit=\"hPa\" value=\"1024.1\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-10T03:00:00\" to=\"2015-05-10T04:00:00\">\r\n
+        \       <!-- Valid from 2015-05-10T03:00:00 to 2015-05-10T04:00:00 -->\r\n
+        \       <symbol number=\"1\" numberEx=\"1\" name=\"Clear sky\" var=\"mf/01n.72\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-10T03:00:00
+        -->\r\n        <windDirection deg=\"234.8\" code=\"SW\" name=\"Southwest\"
+        />\r\n        <windSpeed mps=\"1.8\" name=\"Light breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"9\" />\r\n        <pressure unit=\"hPa\" value=\"1024.3\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-10T04:00:00\" to=\"2015-05-10T05:00:00\">\r\n
+        \       <!-- Valid from 2015-05-10T04:00:00 to 2015-05-10T05:00:00 -->\r\n
+        \       <symbol number=\"1\" numberEx=\"1\" name=\"Clear sky\" var=\"mf/01n.72\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-10T04:00:00
+        -->\r\n        <windDirection deg=\"217.9\" code=\"SW\" name=\"Southwest\"
+        />\r\n        <windSpeed mps=\"2.1\" name=\"Light breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"9\" />\r\n        <pressure unit=\"hPa\" value=\"1024.4\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-10T05:00:00\" to=\"2015-05-10T06:00:00\">\r\n
+        \       <!-- Valid from 2015-05-10T05:00:00 to 2015-05-10T06:00:00 -->\r\n
+        \       <symbol number=\"1\" numberEx=\"1\" name=\"Clear sky\" var=\"mf/01n.72\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-10T05:00:00
+        -->\r\n        <windDirection deg=\"216.8\" code=\"SW\" name=\"Southwest\"
+        />\r\n        <windSpeed mps=\"2.1\" name=\"Light breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"8\" />\r\n        <pressure unit=\"hPa\" value=\"1024.6\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-10T06:00:00\" to=\"2015-05-10T07:00:00\">\r\n
+        \       <!-- Valid from 2015-05-10T06:00:00 to 2015-05-10T07:00:00 -->\r\n
+        \       <symbol number=\"1\" numberEx=\"1\" name=\"Clear sky\" var=\"01d\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-10T06:00:00
+        -->\r\n        <windDirection deg=\"211.2\" code=\"SSW\" name=\"South-southwest\"
+        />\r\n        <windSpeed mps=\"2.0\" name=\"Light breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"8\" />\r\n        <pressure unit=\"hPa\" value=\"1024.9\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-10T07:00:00\" to=\"2015-05-10T08:00:00\">\r\n
+        \       <!-- Valid from 2015-05-10T07:00:00 to 2015-05-10T08:00:00 -->\r\n
+        \       <symbol number=\"2\" numberEx=\"2\" name=\"Fair\" var=\"02d\" />\r\n
+        \       <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-10T07:00:00
+        -->\r\n        <windDirection deg=\"182.3\" code=\"S\" name=\"South\" />\r\n
+        \       <windSpeed mps=\"2.3\" name=\"Light breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"8\" />\r\n        <pressure unit=\"hPa\" value=\"1025.0\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-10T08:00:00\" to=\"2015-05-10T09:00:00\">\r\n
+        \       <!-- Valid from 2015-05-10T08:00:00 to 2015-05-10T09:00:00 -->\r\n
+        \       <symbol number=\"3\" numberEx=\"3\" name=\"Partly cloudy\" var=\"03d\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-10T08:00:00
+        -->\r\n        <windDirection deg=\"167.5\" code=\"SSE\" name=\"South-southeast\"
+        />\r\n        <windSpeed mps=\"1.9\" name=\"Light breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"9\" />\r\n        <pressure unit=\"hPa\" value=\"1025.2\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-10T09:00:00\" to=\"2015-05-10T10:00:00\">\r\n
+        \       <!-- Valid from 2015-05-10T09:00:00 to 2015-05-10T10:00:00 -->\r\n
+        \       <symbol number=\"3\" numberEx=\"3\" name=\"Partly cloudy\" var=\"03d\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-10T09:00:00
+        -->\r\n        <windDirection deg=\"184.3\" code=\"S\" name=\"South\" />\r\n
+        \       <windSpeed mps=\"3.9\" name=\"Gentle breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"12\" />\r\n        <pressure unit=\"hPa\" value=\"1025.1\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-10T10:00:00\" to=\"2015-05-10T11:00:00\">\r\n
+        \       <!-- Valid from 2015-05-10T10:00:00 to 2015-05-10T11:00:00 -->\r\n
+        \       <symbol number=\"2\" numberEx=\"2\" name=\"Fair\" var=\"02d\" />\r\n
+        \       <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-10T10:00:00
+        -->\r\n        <windDirection deg=\"186.9\" code=\"S\" name=\"South\" />\r\n
+        \       <windSpeed mps=\"5.1\" name=\"Gentle breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"14\" />\r\n        <pressure unit=\"hPa\" value=\"1024.8\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-10T11:00:00\" to=\"2015-05-10T12:00:00\">\r\n
+        \       <!-- Valid from 2015-05-10T11:00:00 to 2015-05-10T12:00:00 -->\r\n
+        \       <symbol number=\"1\" numberEx=\"1\" name=\"Clear sky\" var=\"01d\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-10T11:00:00
+        -->\r\n        <windDirection deg=\"189.6\" code=\"S\" name=\"South\" />\r\n
+        \       <windSpeed mps=\"5.6\" name=\"Moderate breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"16\" />\r\n        <pressure unit=\"hPa\" value=\"1024.6\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-10T12:00:00\" to=\"2015-05-10T13:00:00\">\r\n
+        \       <!-- Valid from 2015-05-10T12:00:00 to 2015-05-10T13:00:00 -->\r\n
+        \       <symbol number=\"1\" numberEx=\"1\" name=\"Clear sky\" var=\"01d\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-10T12:00:00
+        -->\r\n        <windDirection deg=\"193.9\" code=\"SSW\" name=\"South-southwest\"
+        />\r\n        <windSpeed mps=\"6.4\" name=\"Moderate breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"17\" />\r\n        <pressure unit=\"hPa\" value=\"1024.3\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-10T13:00:00\" to=\"2015-05-10T14:00:00\">\r\n
+        \       <!-- Valid from 2015-05-10T13:00:00 to 2015-05-10T14:00:00 -->\r\n
+        \       <symbol number=\"1\" numberEx=\"1\" name=\"Clear sky\" var=\"01d\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-10T13:00:00
+        -->\r\n        <windDirection deg=\"194.3\" code=\"SSW\" name=\"South-southwest\"
+        />\r\n        <windSpeed mps=\"6.7\" name=\"Moderate breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"17\" />\r\n        <pressure unit=\"hPa\" value=\"1024.1\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-10T14:00:00\" to=\"2015-05-10T15:00:00\">\r\n
+        \       <!-- Valid from 2015-05-10T14:00:00 to 2015-05-10T15:00:00 -->\r\n
+        \       <symbol number=\"1\" numberEx=\"1\" name=\"Clear sky\" var=\"01d\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-10T14:00:00
+        -->\r\n        <windDirection deg=\"193.0\" code=\"SSW\" name=\"South-southwest\"
+        />\r\n        <windSpeed mps=\"6.7\" name=\"Moderate breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"18\" />\r\n        <pressure unit=\"hPa\" value=\"1023.6\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-10T15:00:00\" to=\"2015-05-10T16:00:00\">\r\n
+        \       <!-- Valid from 2015-05-10T15:00:00 to 2015-05-10T16:00:00 -->\r\n
+        \       <symbol number=\"1\" numberEx=\"1\" name=\"Clear sky\" var=\"01d\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-10T15:00:00
+        -->\r\n        <windDirection deg=\"195.2\" code=\"SSW\" name=\"South-southwest\"
+        />\r\n        <windSpeed mps=\"7.0\" name=\"Moderate breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"18\" />\r\n        <pressure unit=\"hPa\" value=\"1023.2\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-10T16:00:00\" to=\"2015-05-10T17:00:00\">\r\n
+        \       <!-- Valid from 2015-05-10T16:00:00 to 2015-05-10T17:00:00 -->\r\n
+        \       <symbol number=\"1\" numberEx=\"1\" name=\"Clear sky\" var=\"01d\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-10T16:00:00
+        -->\r\n        <windDirection deg=\"200.1\" code=\"SSW\" name=\"South-southwest\"
+        />\r\n        <windSpeed mps=\"7.1\" name=\"Moderate breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"18\" />\r\n        <pressure unit=\"hPa\" value=\"1022.9\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-10T17:00:00\" to=\"2015-05-10T18:00:00\">\r\n
+        \       <!-- Valid from 2015-05-10T17:00:00 to 2015-05-10T18:00:00 -->\r\n
+        \       <symbol number=\"1\" numberEx=\"1\" name=\"Clear sky\" var=\"01d\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-10T17:00:00
+        -->\r\n        <windDirection deg=\"201.8\" code=\"SSW\" name=\"South-southwest\"
+        />\r\n        <windSpeed mps=\"6.8\" name=\"Moderate breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"18\" />\r\n        <pressure unit=\"hPa\" value=\"1022.6\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-10T18:00:00\" to=\"2015-05-10T19:00:00\">\r\n
+        \       <!-- Valid from 2015-05-10T18:00:00 to 2015-05-10T19:00:00 -->\r\n
+        \       <symbol number=\"1\" numberEx=\"1\" name=\"Clear sky\" var=\"01d\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-10T18:00:00
+        -->\r\n        <windDirection deg=\"203.1\" code=\"SSW\" name=\"South-southwest\"
+        />\r\n        <windSpeed mps=\"6.3\" name=\"Moderate breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"18\" />\r\n        <pressure unit=\"hPa\" value=\"1022.1\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-10T19:00:00\" to=\"2015-05-10T20:00:00\">\r\n
+        \       <!-- Valid from 2015-05-10T19:00:00 to 2015-05-10T20:00:00 -->\r\n
+        \       <symbol number=\"1\" numberEx=\"1\" name=\"Clear sky\" var=\"01d\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-10T19:00:00
+        -->\r\n        <windDirection deg=\"203.1\" code=\"SSW\" name=\"South-southwest\"
+        />\r\n        <windSpeed mps=\"5.8\" name=\"Moderate breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"17\" />\r\n        <pressure unit=\"hPa\" value=\"1021.6\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-10T20:00:00\" to=\"2015-05-10T21:00:00\">\r\n
+        \       <!-- Valid from 2015-05-10T20:00:00 to 2015-05-10T21:00:00 -->\r\n
+        \       <symbol number=\"1\" numberEx=\"1\" name=\"Clear sky\" var=\"01d\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-10T20:00:00
+        -->\r\n        <windDirection deg=\"202.6\" code=\"SSW\" name=\"South-southwest\"
+        />\r\n        <windSpeed mps=\"5.5\" name=\"Moderate breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"16\" />\r\n        <pressure unit=\"hPa\" value=\"1021.7\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-10T21:00:00\" to=\"2015-05-10T22:00:00\">\r\n
+        \       <!-- Valid from 2015-05-10T21:00:00 to 2015-05-10T22:00:00 -->\r\n
+        \       <symbol number=\"1\" numberEx=\"1\" name=\"Clear sky\" var=\"mf/01n.72\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-10T21:00:00
+        -->\r\n        <windDirection deg=\"194.4\" code=\"SSW\" name=\"South-southwest\"
+        />\r\n        <windSpeed mps=\"4.3\" name=\"Gentle breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"15\" />\r\n        <pressure unit=\"hPa\" value=\"1021.9\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-10T22:00:00\" to=\"2015-05-10T23:00:00\">\r\n
+        \       <!-- Valid from 2015-05-10T22:00:00 to 2015-05-10T23:00:00 -->\r\n
+        \       <symbol number=\"3\" numberEx=\"3\" name=\"Partly cloudy\" var=\"mf/03n.72\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-10T22:00:00
+        -->\r\n        <windDirection deg=\"177.9\" code=\"S\" name=\"South\" />\r\n
+        \       <windSpeed mps=\"3.4\" name=\"Gentle breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"13\" />\r\n        <pressure unit=\"hPa\" value=\"1022.0\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-10T23:00:00\" to=\"2015-05-11T00:00:00\">\r\n
+        \       <!-- Valid from 2015-05-10T23:00:00 to 2015-05-11T00:00:00 -->\r\n
+        \       <symbol number=\"2\" numberEx=\"2\" name=\"Fair\" var=\"mf/02n.72\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-10T23:00:00
+        -->\r\n        <windDirection deg=\"157.7\" code=\"SSE\" name=\"South-southeast\"
+        />\r\n        <windSpeed mps=\"3.1\" name=\"Light breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"12\" />\r\n        <pressure unit=\"hPa\" value=\"1021.6\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-11T00:00:00\" to=\"2015-05-11T01:00:00\">\r\n
+        \       <!-- Valid from 2015-05-11T00:00:00 to 2015-05-11T01:00:00 -->\r\n
+        \       <symbol number=\"4\" numberEx=\"4\" name=\"Cloudy\" var=\"04\" />\r\n
+        \       <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-11T00:00:00
+        -->\r\n        <windDirection deg=\"145.9\" code=\"SE\" name=\"Southeast\"
+        />\r\n        <windSpeed mps=\"3.2\" name=\"Light breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"12\" />\r\n        <pressure unit=\"hPa\" value=\"1021.1\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-11T01:00:00\" to=\"2015-05-11T02:00:00\">\r\n
+        \       <!-- Valid from 2015-05-11T01:00:00 to 2015-05-11T02:00:00 -->\r\n
+        \       <symbol number=\"4\" numberEx=\"4\" name=\"Cloudy\" var=\"04\" />\r\n
+        \       <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-11T01:00:00
+        -->\r\n        <windDirection deg=\"140.2\" code=\"SE\" name=\"Southeast\"
+        />\r\n        <windSpeed mps=\"3.5\" name=\"Gentle breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"12\" />\r\n        <pressure unit=\"hPa\" value=\"1020.6\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-11T02:00:00\" to=\"2015-05-11T03:00:00\">\r\n
+        \       <!-- Valid from 2015-05-11T02:00:00 to 2015-05-11T03:00:00 -->\r\n
+        \       <symbol number=\"4\" numberEx=\"4\" name=\"Cloudy\" var=\"04\" />\r\n
+        \       <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-11T02:00:00
+        -->\r\n        <windDirection deg=\"139.7\" code=\"SE\" name=\"Southeast\"
+        />\r\n        <windSpeed mps=\"3.6\" name=\"Gentle breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"13\" />\r\n        <pressure unit=\"hPa\" value=\"1020.1\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-11T03:00:00\" to=\"2015-05-11T04:00:00\">\r\n
+        \       <!-- Valid from 2015-05-11T03:00:00 to 2015-05-11T04:00:00 -->\r\n
+        \       <symbol number=\"4\" numberEx=\"4\" name=\"Cloudy\" var=\"04\" />\r\n
+        \       <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-11T03:00:00
+        -->\r\n        <windDirection deg=\"155.3\" code=\"SSE\" name=\"South-southeast\"
+        />\r\n        <windSpeed mps=\"4.3\" name=\"Gentle breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"13\" />\r\n        <pressure unit=\"hPa\" value=\"1019.4\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-11T04:00:00\" to=\"2015-05-11T05:00:00\">\r\n
+        \       <!-- Valid from 2015-05-11T04:00:00 to 2015-05-11T05:00:00 -->\r\n
+        \       <symbol number=\"4\" numberEx=\"4\" name=\"Cloudy\" var=\"04\" />\r\n
+        \       <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-11T04:00:00
+        -->\r\n        <windDirection deg=\"171.0\" code=\"S\" name=\"South\" />\r\n
+        \       <windSpeed mps=\"4.6\" name=\"Gentle breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"14\" />\r\n        <pressure unit=\"hPa\" value=\"1019.1\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-11T05:00:00\" to=\"2015-05-11T06:00:00\">\r\n
+        \       <!-- Valid from 2015-05-11T05:00:00 to 2015-05-11T06:00:00 -->\r\n
+        \       <symbol number=\"4\" numberEx=\"4\" name=\"Cloudy\" var=\"04\" />\r\n
+        \       <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-11T05:00:00
+        -->\r\n        <windDirection deg=\"198.8\" code=\"SSW\" name=\"South-southwest\"
+        />\r\n        <windSpeed mps=\"4.3\" name=\"Gentle breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"14\" />\r\n        <pressure unit=\"hPa\" value=\"1018.9\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-11T06:00:00\" to=\"2015-05-11T07:00:00\">\r\n
+        \       <!-- Valid from 2015-05-11T06:00:00 to 2015-05-11T07:00:00 -->\r\n
+        \       <symbol number=\"4\" numberEx=\"4\" name=\"Cloudy\" var=\"04\" />\r\n
+        \       <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-11T06:00:00
+        -->\r\n        <windDirection deg=\"203.1\" code=\"SSW\" name=\"South-southwest\"
+        />\r\n        <windSpeed mps=\"3.9\" name=\"Gentle breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"14\" />\r\n        <pressure unit=\"hPa\" value=\"1018.8\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-11T07:00:00\" to=\"2015-05-11T08:00:00\">\r\n
+        \       <!-- Valid from 2015-05-11T07:00:00 to 2015-05-11T08:00:00 -->\r\n
+        \       <symbol number=\"4\" numberEx=\"4\" name=\"Cloudy\" var=\"04\" />\r\n
+        \       <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-11T07:00:00
+        -->\r\n        <windDirection deg=\"212.8\" code=\"SSW\" name=\"South-southwest\"
+        />\r\n        <windSpeed mps=\"3.5\" name=\"Gentle breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"14\" />\r\n        <pressure unit=\"hPa\" value=\"1018.7\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-11T08:00:00\" to=\"2015-05-11T09:00:00\">\r\n
+        \       <!-- Valid from 2015-05-11T08:00:00 to 2015-05-11T09:00:00 -->\r\n
+        \       <symbol number=\"4\" numberEx=\"4\" name=\"Cloudy\" var=\"04\" />\r\n
+        \       <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-11T08:00:00
+        -->\r\n        <windDirection deg=\"223.9\" code=\"SW\" name=\"Southwest\"
+        />\r\n        <windSpeed mps=\"3.6\" name=\"Gentle breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"14\" />\r\n        <pressure unit=\"hPa\" value=\"1018.7\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-11T09:00:00\" to=\"2015-05-11T10:00:00\">\r\n
+        \       <!-- Valid from 2015-05-11T09:00:00 to 2015-05-11T10:00:00 -->\r\n
+        \       <symbol number=\"4\" numberEx=\"4\" name=\"Cloudy\" var=\"04\" />\r\n
+        \       <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-11T09:00:00
+        -->\r\n        <windDirection deg=\"226.6\" code=\"SW\" name=\"Southwest\"
+        />\r\n        <windSpeed mps=\"3.5\" name=\"Gentle breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"15\" />\r\n        <pressure unit=\"hPa\" value=\"1018.7\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-11T10:00:00\" to=\"2015-05-11T11:00:00\">\r\n
+        \       <!-- Valid from 2015-05-11T10:00:00 to 2015-05-11T11:00:00 -->\r\n
+        \       <symbol number=\"4\" numberEx=\"4\" name=\"Cloudy\" var=\"04\" />\r\n
+        \       <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-11T10:00:00
+        -->\r\n        <windDirection deg=\"232.5\" code=\"SW\" name=\"Southwest\"
+        />\r\n        <windSpeed mps=\"3.5\" name=\"Gentle breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"17\" />\r\n        <pressure unit=\"hPa\" value=\"1018.6\"
+        />\r\n      </time>\r\n      <time from=\"2015-05-11T11:00:00\" to=\"2015-05-11T12:00:00\">\r\n
+        \       <!-- Valid from 2015-05-11T11:00:00 to 2015-05-11T12:00:00 -->\r\n
+        \       <symbol number=\"3\" numberEx=\"3\" name=\"Partly cloudy\" var=\"03d\"
+        />\r\n        <precipitation value=\"0\" />\r\n        <!-- Valid at 2015-05-11T11:00:00
+        -->\r\n        <windDirection deg=\"227.0\" code=\"SW\" name=\"Southwest\"
+        />\r\n        <windSpeed mps=\"4.0\" name=\"Gentle breeze\" />\r\n        <temperature
+        unit=\"celsius\" value=\"19\" />\r\n        <pressure unit=\"hPa\" value=\"1018.5\"
+        />\r\n      </time>\r\n    </tabular>\r\n  </forecast>\r\n</weatherdata>"
+    http_version: 
+  recorded_at: Sat, 09 May 2015 10:37:51 GMT
+recorded_with: VCR 2.9.3
