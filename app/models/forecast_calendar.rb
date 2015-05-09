@@ -27,7 +27,6 @@ class ForecastCalendar
     # This needs some thought
     calendar = RiCal.Calendar do |cal|
       cal.add_x_property 'x_wr_calname', "#{@condition}"
-      debugger
       combined_series.each do |forecast|
         cal.event do |event|
           event.summary = @condition
