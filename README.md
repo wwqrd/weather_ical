@@ -1,4 +1,4 @@
-Weather iCal
+Weather iCal [![Build Status](https://travis-ci.org/wwqrd/weather_ical.svg?branch=master)](https://travis-ci.org/wwqrd/weather_ical) [![Code Climate](https://codeclimate.com/github/wwqrd/weather_ical/badges/gpa.svg)](https://codeclimate.com/github/wwqrd/weather_ical)
 ============
 
 This app turns particular weather conditions into an ics feed of events.
@@ -8,7 +8,3 @@ is to allow the setup of custom weather conditions, e.g. `high_wind or
 precipitation`.
 
 
-Build status
-------------
-
-[![Build Status](https://travis-ci.org/wwqrd/weather_ical.svg?branch=master)](https://travis-ci.org/wwqrd/weather_ical)
