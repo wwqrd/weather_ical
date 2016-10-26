@@ -11,4 +11,4 @@ precipitation`.
 Build status
 ------------
 
-[![Build Status](https://travis-ci.org/steeeve/weather_ical.svg?branch=master)](https://travis-ci.org/steeeve/weather_ical)
+[![Build Status](https://travis-ci.org/wwqrd/weather_ical.svg?branch=master)](https://travis-ci.org/wwqrd/weather_ical)
